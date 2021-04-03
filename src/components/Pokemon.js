@@ -76,7 +76,7 @@ function Pokemon({pokemonUrl}) {
                 <div className="poke-type-container">
                     {pokemonType && pokemonType.map((types) => {
                         return (
-                            <p className="poke-type" id={types.type.name} key={types.type.name}>{types.type.name}</p>)
+                            <p className="poke-type-item" id={types.type.name} key={types.type.name}>{types.type.name}</p>)
                     })}
                 </div>
                 {error && <p>{error}</p>}
