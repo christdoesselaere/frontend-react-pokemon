@@ -41,14 +41,16 @@ function Pokemon({pokemonUrl}) {
 
     return (
         <>
-            {error && <div className="error-container">
+            {error &&
+            <div className="error-container">
                 <h5 className="poke-index">No: ???</h5>
                 <h2 className="poke-name">MISSINGNO.</h2>
                 <div className="poke-image-container">
                     <img className="poke-image" src={missingNo} alt="missingNo"/>
                 </div>
                 <p className="error-message">{error}</p>
-            </div>}
+            </div>
+            }
             {!error &&
             <div
                 className="poke-container"
