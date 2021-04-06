@@ -38,7 +38,7 @@ function Pokedex() {
         <>
             {console.log(pokemonIndex)}
             {error && <p>{error}</p>}
-            <div className="button-constainer">
+            <div className="button-container">
                 <button type="button" className="button" onClick={previousPokemon}>Previous</button>
                 <button type="button" className="button" onClick={nextPokemon}>Next</button>
             </div>
