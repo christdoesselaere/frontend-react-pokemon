@@ -31,7 +31,7 @@ function Pokemon({pokemonUrl}) {
                 setPokemonIndex(data.id);
             } catch (error) {
                 console.error(error);
-                setError(`Er is iets mis gegaan met het ophalen van de Pokemon.`);
+                setError(`Something went wrong retrieving the Pokemon.`);
             }
         }
 
@@ -48,8 +48,9 @@ function Pokemon({pokemonUrl}) {
                 {error && <p>{error}</p>}
                 <h5 className="poke-index">No: {pokemonIndex}</h5>
                 <h2 className="poke-name">{pokemonName}</h2>
-                {}
-                <img className="poke-image" src={pokemonSprite} alt={pokemonName}/>
+                <div className="poke-image-container">
+                    <img className="poke-image" src={pokemonSprite} alt={pokemonName}/>
+                </div>
                 <img id="poke-image-loader" src={pokemonSpriteBack} alt={pokemonName}/>
                 <div className="poke-stats-container">
                     <div className="poke-stats-group">
@@ -76,7 +77,8 @@ function Pokemon({pokemonUrl}) {
                 <div className="poke-type-container">
                     {pokemonType && pokemonType.map((types) => {
                         return (
-                            <p className="poke-type-item" id={types.type.name} key={types.type.name}>{types.type.name}</p>)
+                            <p className="poke-type-item" id={types.type.name}
+                               key={types.type.name}>{types.type.name}</p>)
                     })}
                 </div>
                 {error && <p>{error}</p>}

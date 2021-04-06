@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
 .poke-container {
     display: flex;
     flex-direction: column;
@@ -12,15 +15,34 @@
 }
 
 .poke-name {
+    font-family: 'Merriweather Sans', sans-serif;
+    /*font-weight: bold;*/
+    font-size: 22px;
+    text-align: center;
     text-transform: capitalize;
+    height: 50px;
     margin: 0;
+}
+
+.poke-image-container {
+    display: flex;
+    justify-content: center;
+    background-color: #31309A;
+    width: 165px;
+    height: 96px;
+    margin: 8px 0 4px;
+    border: 1px solid black;
+    border-radius: 8px;
 }
 
 .poke-image {
     height: 96px;
+    background-color: #31309A;
 }
 
 .poke-stats-container {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -47,11 +69,10 @@
 
 .poke-type-item {
     text-transform: capitalize;
-    background-color: white;
     min-width: 80px;
     text-align: center;
     padding: 5px;
-    border: 1px solid darkgray;
+    border: 1px solid hsl(0, 0%, 20%);
     border-radius: 15px;
     margin: 0 5px;
 }
