@@ -16,7 +16,6 @@
 
 .poke-name {
     font-family: 'Merriweather Sans', sans-serif;
-    /*font-weight: bold;*/
     font-size: 22px;
     text-align: center;
     text-transform: capitalize;
@@ -82,6 +81,26 @@
     width: 135%;
     flex-direction: row-reverse;
     margin: 5px;
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 165px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.error-message {
+    display: flex;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    text-align: center;
 }
 
 #poke-image-loader {

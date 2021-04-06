@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 import './Pokemon.css';
+import missingNo from '../../assets/missingno.png'
 
 function Pokemon({pokemonUrl}) {
     const [pokemonName, setPokemonName] = useState('');
@@ -40,12 +41,20 @@ function Pokemon({pokemonUrl}) {
 
     return (
         <>
+            {error && <div className="error-container">
+                <h5 className="poke-index">No: ???</h5>
+                <h2 className="poke-name">MISSINGNO.</h2>
+                <div className="poke-image-container">
+                    <img className="poke-image" src={missingNo} alt="missingNo"/>
+                </div>
+                <p className="error-message">{error}</p>
+            </div>}
+            {!error &&
             <div
                 className="poke-container"
                 onMouseOver={() => setPokemonSprite(pokemonSpriteBack)}
                 onMouseOut={() => setPokemonSprite(pokemonSpriteFront)}
             >
-                {error && <p>{error}</p>}
                 <h5 className="poke-index">No: {pokemonIndex}</h5>
                 <h2 className="poke-name">{pokemonName}</h2>
                 <div className="poke-image-container">
@@ -81,8 +90,9 @@ function Pokemon({pokemonUrl}) {
                                key={types.type.name}>{types.type.name}</p>)
                     })}
                 </div>
-                {error && <p>{error}</p>}
             </div>
+            }
+
         </>
     )
 
