@@ -1,0 +1,12 @@
+body {
+    background-color: hsl(106, 28%, 57%);
+    background-image: url("./assets/pokemon-background.png");
+    background-repeat: repeat-x;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.button-container {
+    position: fixed;
+    padding-top: 160px;
+    z-index: 1;
+}
+
+.button {
+    background: hsl(46, 100%, 60%);
+    color: hsl(241, 52%, 40%);
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 30px;
+    width: 180px;
+    border: 4px solid hsl(241, 52%, 40%);
+    border-radius: 30px;
+    margin: 0 25px 8px;
+    cursor: pointer;
+    outline: inherit;
+    box-shadow: 0 0 10px black;
+}
+
+.button:hover {
+    color: hsl(240, 100%, 40%);
+    box-shadow: none;
+}
+
+.button:active {
+    background-color: #CE9966;
+    border: 4px solid #020066;
+}
+
+.pokedex-items {
+    display: flex;
+    max-width: 1050px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.pokebal {
+    display: flex;
+    min-width: 240px;
+    height: 400px;
+    justify-content: center;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 8px;
+    background-color: hsl(50, 50%, 90%);
+    margin: 8px;
+    box-shadow: 0 0 8px hsl(0, 0%, 0%);
+}
+
+.pokebal:hover {
+    box-shadow: 0 0 20px hsl(240, 100%, 40%);
+}

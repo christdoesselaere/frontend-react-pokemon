@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.poke-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 165px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.poke-name {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    text-transform: capitalize;
+    height: 50px;
+    margin: 0;
+}
+
+.poke-image-container {
+    display: flex;
+    justify-content: center;
+    background-color: #31309A;
+    width: 165px;
+    height: 96px;
+    margin: 8px 0 4px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.poke-image {
+    height: 96px;
+    background-color: #31309A;
+}
+
+.poke-stats-container {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+
+.poke-stats-group {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.poke-stats-item {
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.poke-type-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.poke-type-item {
+    text-transform: capitalize;
+    min-width: 80px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid hsl(0, 0%, 20%);
+    border-radius: 15px;
+    margin: 0 5px;
+}
+
+.poke-index {
+    display: flex;
+    width: 135%;
+    flex-direction: row-reverse;
+    margin: 5px;
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 165px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.error-message {
+    display: flex;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+#poke-image-loader {
+    display: none;
+}
+
+#grass {
+    color: white;
+    background-color: forestgreen;
+}
+
+#fire {
+    color: white;
+    background-color: red;
+}
+
+#water {
+    color: white;
+    background-color: royalblue;
+}
+
+#poison {
+    color: white;
+    background-color: rebeccapurple;
+}
+
+#flying {
+    color: black;
+    background-color: skyblue;
+}
+
+#bug {
+    color: black;
+    background-color: yellowgreen;
+}
+
+#normal {
+    color: black;
+    background-color: white;
+}
+
+#electric {
+    color: black;
+    background-color: gold;
+}
+
+#ground {
+    color: white;
+    background-color: saddlebrown;
+}
+
+#fairy {
+    color: black;
+    background-color: hotpink;
+}
+
+#fighting {
+    color: black;
+    background-color: lightgray;
+}
+
+#psychic {
+    color: white;
+    background-color: darkmagenta;
+}
+
+#rock {
+    color: white;
+    background-color: dimgray;
+}
+
+#steel {
+    color: black;
+    background-color: lightsteelblue;
+}
+
+#ice {
+    color: black;
+    background-color: aliceblue;
+}
+
+#ghost {
+    color: black;
+    background-color: mediumpurple;
+}
+
+#dragon {
+    color: white;
+    background-color: darkred;
+}
+
+#dark {
+    color: white;
+    background-color: black;
+}
